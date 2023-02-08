@@ -5,10 +5,10 @@ This project was an assignment for The Odin Project. The goal was to learn how t
 
 
 ## Technologies Used
--HTML
--CSS
--JavaSCript
--Webpack
+- HTML
+- CSS
+- JavaSCript
+- Webpack
 
 ## Live Site
 (https://singhalex.github.io/weather/)
