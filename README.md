@@ -4,13 +4,13 @@
 This project was an assignment for The Odin Project. The goal was to learn how to use asynchronous function in combination with APIs.
 
 
-##Technologies Used
+## Technologies Used
 -HTML
 -CSS
 -JavaSCript
 -Webpack
 
-##Live Site
+## Live Site
 (https://singhalex.github.io/weather/)
 
 ##How it Works
