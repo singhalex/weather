@@ -1,6 +1,7 @@
 * {
   margin: 0;
   padding: 0;
+  font-family: "Nixie One", cursive;
 }
 
 html {
@@ -25,16 +26,21 @@ html {
 }
 
 #city {
-  font-size: 4rem;
+  font-size: 5rem;
+  letter-spacing: 0.25ch;
+  margin-bottom: 1rem;
 }
 
 #temp-display {
   display: flex;
   gap: 1rem;
   align-items: center;
+  max-height: 500px;
 }
+
 img {
-  width: clamp(50px, 50%, 100px);
+  max-width: clamp(50px, 50%, 500px);
+  margin: auto;
 }
 
 #temp-display > * {
@@ -42,32 +48,71 @@ img {
 }
 
 #temp-display p {
-  font-size: 4rem;
+  font-size: 10vw;
   text-align: center;
 }
 
 input {
+  color: rgb(32, 32, 32);
+  font-size: 1.25rem;
+  font-weight: bold;
   background-color: rgba(255, 255, 255, 0.5);
   border: none;
   padding: 1rem;
-  border-radius: 1.5rem;
+  border-radius: 1.75rem;
   width: 100%;
+}
+
+input:focus {
+  outline: none;
+  -webkit-box-shadow: 0px 0px 2px 5px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 0px 0px 2px 5px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 0px 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 form {
   display: flex;
   flex-direction: row;
-  margin-block: 1rem;
+  margin-block: 3rem;
 }
 
 button {
+  border-radius: 50%;
+  padding: 0.5rem;
   background-color: transparent;
   border: none;
   outline: none;
-  margin-left: -40px;
+  margin-left: -50px;
+  cursor: pointer;
 }
 
 button img {
+  /* padding: 1rem; */
   width: 2rem;
   object-fit: cover;
+}
+
+button:focus {
+  -webkit-box-shadow: 0px 0px 2px 3px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 0px 0px 2px 3px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 0px 2px 3px rgba(0, 0, 0, 0.1);
+}
+
+.loader.animate {
+  margin: auto;
+  border: 16px solid #f3f3f357; /* Light grey */
+  border-top: 16px solid #3498db; /* Blue */
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }
